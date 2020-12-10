@@ -9,10 +9,6 @@
        <script src="capture-video-frame-master/capture-video-frame.js" ></script>
         <script src="https://unpkg.com/merge-images"></script>
         <script src="jmin.js" ></script>
- 
-    </head>
-
-    <body style="margin: 0; overflow: hidden;">
           <style> 
        .button {
     z-index: 100000;
@@ -48,8 +44,11 @@
 }
     
         </style>  
-        <button class="button" id="snap-button">SNAPSHOT</button>
-<a id="descarga-link" href="#"></a>
+ 
+    </head>
+
+    <body style="margin: 0; overflow: hidden;">
+   
         <a-scene
             vr-mode-ui="enabled: false;"
             loading-screen="enabled: false;"
@@ -85,7 +84,9 @@
                     gesture-handler
                 ></a-entity>
             </a-marker>
-
+     
+        <button class="button" id="snap-button">SNAPSHOT</button>
+<a id="descarga-link" href="#"></a>
             <a-entity camera></a-entity>
         </a-scene>
 
