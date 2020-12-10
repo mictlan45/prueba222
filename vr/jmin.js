@@ -17,7 +17,7 @@ document.getElementById("snap-button").addEventListener("click", function() {
 	aScene = resizeCanvas(aScene, frame.width, frame.height);
 	frame = frame.dataUri;
 	mergeImages([frame, aScene]).then(b64 => {
-		let link = document.getElementById("download-link", "png");
+		let link = document.getElementById("download-link", "jpeg");
 		link.setAttribute("download", "foto.jpeg");
 		link.setAttribute("href", b64);
         link.click();
